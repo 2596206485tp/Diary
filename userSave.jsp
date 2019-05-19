@@ -17,7 +17,8 @@
 		个人信息设置</div>
 	<div class="row-fluid" style="padding-top: 20px;">
 		<div class="span4">
-			<img src="${currentUser.imageName }">
+			<img src="userImages/3.png">
+			<%--<img src="${currentUser.imageName }">--%>
 		</div>
 		<div class="span8">
 			<form action="user?action=save" method="post" enctype="multipart/form-data" onsubmit="return checkForm()">
@@ -39,7 +40,7 @@
 					</tr>
 					<tr>
 						<td><button class="btn btn-primary" type="submit">保存</button></td>
-						<td><button class="btn btn-primary" type="button" onclick="javascript:history.back()">返回</button>&nbsp;&nbsp;<font id="error" color="red">${error }</font></td>
+						<td><button class="btn btn-primary" type="reset" onclick="javascript:history.back()">返回</button>&nbsp;&nbsp;<font id="error" color="red">${error }</font></td>
 					</tr>
 				</table>
 			</form>
